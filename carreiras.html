@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="full.min.css" />
+  
+  <style>
+    html,body {
+      overflow-x: hidden;
+    }
+    .dbg0{background-color:#069;}
+    .dbg1{background-color:#06F;}
+    .dbg2{background-color:#0F9;}
+    .dbg3{background-color:#F09;}
+    
+    .gradient{
+      background: -webkit-linear-gradient(-45deg, #d2e04e 25%, #08853a 50%, #d2e04e 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .gray-container{
+      background-color: #F7F7F7;
+    }
+    
+    /*======================== Font ===================================*/
+    
+    .os{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+    }
+    
+    .os-bold{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+    }
+    
+    .secondary-typo{
+      font-size:120px;
+      line-height: 80px;
+      margin-top:120px;
+    }
+    
+    .secondary-typo small{font-size:150px;}
+    .secondary-typo strong{
+      margin: 0px 0 -60px 0;
+      display: block;
+      letter-spacing: 10px;
+    }
+    .secondary-typo strong span{letter-spacing: 10px;font-size:50px;}
+    
+    .primary-typo{
+      font-size: 50px;
+      line-height: 50px;
+    }
+    
+    .primary-typo small{font-size:150px;}
+    .primary-typo strong{
+      margin: 0px;
+      display: block;
+      letter-spacing: 10px;
+    }
+    .primary-typo strong span{letter-spacing: 10px;font-size:50px;}
+    
+    /*======================== Sobre Nos - VP ===================================*/
+    
+    .sn-vp .gray-paragraph{
+      color:#666666;
+      font-size: 14px;
+      margin: auto;
+    }
+    
+    .sn-vp p{font-size: 17px;}
+    
+    .sn-vp.beige-container {
+      background-color: #f2edbd;
+      
+      background-image: url('media/sn-4_01.jpg'),url('media/sn-4_04.jpg'),url('media/sn-4_03.jpg');
+      background-repeat: no-repeat,no-repeat,no-repeat;
+      background-position: left center, 50% 200px, right center;
+      background-size: contain,600px,contain;
+      
+      min-height: 640px;
+      background-size-y: 640px;
+    }
+    
+    .sn-vp.beige-container .content{margin-top:290px;}
+    .sn-vp.beige-container .content p{font-size:14px;}
+    
+    .sn-vp .custom-typo h1{font-size:60px;}
+    .sn-vp .custom-typo small{letter-spacing: 10px;}
+    
+    .sn-vp p.custom-top{margin-top:-70px;}
+    
+    .sn-vp.fun-section{
+      background: url('media/sn-5.jpg') right center no-repeat;
+      background-size:45%;
+      min-height: 800px;
+    }
+    
+    .sn-vp.green-container{
+      background-color: #96eea9;
+      height: 110px;
+    }
+    .sn-vp.green-container img.left{margin-top:-26px;}
+    .sn-vp.green-container img.right{margin-top:-94px;}
+    .sn-vp.green-container h1{margin-top:27px;}
+    
+    .sn-vp.water-container{
+      background-image: url('media/sn-8.jpg');
+      background-size:contain;
+      background-position: 0 20%;
+      background-repeat: no-repeat;
+      min-height: 900px;
+      padding-top:200px;
+    }
+    .bg-primary{
+      background: url('media/carreiras.jpg') no-repeat;
+      width: 100%;
+      height: calc(100vh - 90px);
+      background-size: cover;
+      display: flex;
+      align-items: center;
+    }
+    .bg-primary p {
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 0;
+    }
+    .somos .description{
+      font-size: 12px;
+      width: 70%;
+    }
+    .three-typo {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .three-typo::after {
+      content: "";
+      width: 30%;
+      background: -webkit-linear-gradient(-45deg, #d2e04e 25%, #08853a 50%, #d2e04e 80%);
+      display: inline-block;
+      height: 20px;
+    }
+    .three-typo::before{
+      content: "";
+      width: 30%;
+      background: -webkit-linear-gradient(-45deg, #d2e04e 25%, #08853a 50%, #d2e04e 80%);
+      display: inline-block;
+      height: 20px;
+    }
+    .estagio {
+      background: #fff url('media/estagio.jpg') no-repeat;
+      background-size: contain;
+      height: 690px;
+      margin: 50px 0;
+    }
+    .cadeira {
+      background: #fff url('media/cadeira.png') no-repeat;
+      background-size: contain;
+      height: 690px;
+      margin-top: 50px;
+      padding-bottom: 60px;
+      color: #fff;
+    }
+    .cadeira img {
+      margin-bottom: 30px;
+      width: 50%;
+    }
+    .cadeira p {
+      font-size: 13px;
+    }
+    .green {
+      background: url('media/bg-green.jpg') no-repeat;
+      background-size: cover;
+      height: 500px;
+      color: #fff;
+    }
+    .btn-green {
+      background-color: #7ab800;
+      color: #fff;
+    }
+  </style>
+  <title>Boilerplate</title>
+</head>
+<body>
+  
+  <header style="background-color:#e7e7e7;height:90px;"></header>
+  <!--Begin content-->
+  
+  <!-- <img src="media/carreiras.jpg" alt="Banner" class="w-100 img-fluid" /> -->
+  <section class="bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>
+            Nós perguntamos: quem você é?<br>
+            Aonde você quer chegar?<br>
+            Nós pedimos: nos mostre.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="pt-5 pb-3 sn-vp">
+    <section class="somos">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h3>Somos uma empresa <br> formada por</h3>
+            <h1 class="gradient primary-typo">
+              <strong>pessoas com<br /><span>brilho nos olhos <br> e com vontade <br> de fazer <br> a diferença!</span></strong><br />
+            </h1>
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center">
+            <p class="description os gray-paragraph">
+              Acreditamos em nosso time de estrelas e oferecemos um ambiente em que todos sintam-se livres para ser quem são e, dessa forma, sejam PROTAGONISTAS de suas carreiras a partir de uma cultura de alta performance fundamentada no RESPEITO e no compromisso com a QUALIDADE. <br><br>
+              A PAIXÃO é o que nos move e a partir disso estamos construindo nossa história no Brasil. Contamos com marcas incríveis e com valores que direcionam um modelo de negócio vencedor. Aqui na HEINEKEN, a gente se desafia muito todos os dias e se DIVERTE na mesma proporção.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="expira">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="gradient text-center">Se esse jeito de ser te inspira, veja como abrir a porta <br>
+              da sua próxima oportunidade profissional aqui com a gente.
+            </h2>
+          </div>
+        </div>
+      </div>
+      <h1 class="gradient three-typo">
+        <strong class="text-uppercase">vem ser heineken!</strong>
+      </h1>
+      
+      <div class="estagio gray-container d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-4 offset-sm-8">
+              <img src="media/text-estagio.png" alt="" class="img-fluid">
+              <p class="os gray-paragraph text-left">Apostamos na energia e nas ideias fresh da nova geração para ser uma das Companhias mais desejadas para se trabalhar, que gera valor por meio do respeito pelas pessoas e pela criação de marcas incríveis. Se você é estudante universitário, não tem medo de novos desafios e está afim de fazer a diferença, inscreva-se para o nosso próximo Programa de Estágio. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cadeira d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-5">
+              <img src="media/leader.png" alt="" class="">
+              <p class="os text-left">Se você tem brilho nos olhos, facilidade para realizar diferentes tarefas e sabe que tem potencial para muito mais, nosso programa de formação de jovens líderes pode ser o próximo passo da sua carreira. Por meio de uma trilha de desenvolvimento estruturada, desafiadora e com metas claras, o programa prepara os novos profissionais para assumirem cargos de liderança na HEINEKEN após 12 meses de imersão no negócio. Fez sentido? <br><br>
+                Clique aqui e entenda mais sobre o programa e processo seletivo. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="green d-flex align-items-center justify-content-center text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-8 offset-sm-2">
+                
+                <h3 class="subl mb-4"><u>Aqui pode estar sua próxima oportunidade</u></h3>
+                
+                <p class="mb-4">
+                  Essa é a porta de entrada principal para quem deseja fazer parte do nosso time de estrelas. Não acreditamos em um perfil ideal, mas na diversidade de experiências e pensamentos, e buscamos pessoas que queiram se juntar a nós para construir uma história cada vez mais vencedora no Brasil. E aí, topa o desafio? Acompanhe as vagas disponíveis e vem ser HEINEKEN!
+                </p>
+                
+                <img src="media/randstad.png" alt="" class="img-responsive d-block m-auto">
+                
+                <a href="#" class="btn btn-green d-inline-block mt-4">Acesse agora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <!--End content-->
+  <footer style="background-color:#e7e7e7;height:175px;"></footer>
+  
+</body>
+</html>
