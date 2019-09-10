@@ -126,13 +126,20 @@
       align-items: center;
     }
     .bg-primary p {
-      font-size: 20px;
+      font-size: 32px;
       color: #fff;
       margin-bottom: 0;
     }
     .somos .description{
       font-size: 12px;
       width: 70%;
+    }
+    .somos h3 {
+      font-size: 16px;
+    }
+    .somos .primary-typo {
+      font-size: 40px;
+      line-height: 1.1;
     }
     .three-typo {
       display: flex;
@@ -156,8 +163,8 @@
     }
     .estagio {
       background: #fff url('media/estagio.jpg') no-repeat;
-      background-size: contain;
-      height: 690px;
+      background-size: cover;
+      height: 540px;
       margin: 50px 0;
     }
     .cadeira {
@@ -185,6 +192,65 @@
       background-color: #7ab800;
       color: #fff;
     }
+    
+    @media (max-width: 768px) {
+      .expira h2 {
+        font-size: 23px;
+      }
+      .three-typo {
+        font-size: 27px;
+        margin-top: 15px;
+      }
+      .estagio {
+        background-position: bottom;
+      }
+      .cadeira {
+        background-size: cover;
+        height: 580px;
+        margin-top: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .bg-primary p {
+        font-size: 18px;
+      }
+      .somos .description {
+        width: 100%;
+        margin-top: 25px;
+      }
+      .expira {
+        padding-top: 0 !important;
+      }
+      .expira h2 {
+        font-size: 18px;
+      }
+      .expira h2 br{
+        display: none;
+      }
+      .three-typo {
+        font-size: 15px;
+        margin-top: 15px;
+      }
+      .estagio {
+        background-position: right;
+        margin: 0;
+      }
+      .green {
+        height: auto;
+      }
+      .green .container{
+       margin: 30px 0;
+      }
+      .cadeira {
+        background-position: left;
+        background-size: cover;
+        height: 580px;
+        margin-top: 0;
+        padding-bottom: 0;
+      }
+    }
   </style>
   <title>Boilerplate</title>
 </head>
@@ -198,7 +264,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <p>
+          <p class="os-bold">
             Nós perguntamos: quem você é?<br>
             Aonde você quer chegar?<br>
             Nós pedimos: nos mostre.
@@ -208,13 +274,13 @@
     </div>
   </section>
   <div class="pt-5 pb-3 sn-vp">
-    <section class="somos">
+    <section class="somos mb-5">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6">
-            <h3>Somos uma empresa <br> formada por</h3>
-            <h1 class="gradient primary-typo">
-              <strong>pessoas com<br /><span>brilho nos olhos <br> e com vontade <br> de fazer <br> a diferença!</span></strong><br />
+          <div class="col-12 col-sm-6 col-lg-4 offset-lg-2">
+            <h3 class="os-bold">Somos uma empresa <br> formada por</h3>
+            <h1 class="gradient primary-typo os-bold">
+              pessoas com<br />brilho nos olhos <br> e com vontade <br> de fazer diferença!<br />
             </h1>
           </div>
           <div class="col-12 col-md-6 d-flex align-items-center">
@@ -227,7 +293,7 @@
       </div>
     </section>
     
-    <section class="expira">
+    <section class="expira d-block pt-5">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -237,15 +303,15 @@
           </div>
         </div>
       </div>
-      <h1 class="gradient three-typo">
+      <h1 class="gradient three-typo os-bold mb-5">
         <strong class="text-uppercase">vem ser heineken!</strong>
       </h1>
       
-      <div class="estagio gray-container d-flex align-items-center">
+      <div class="estagio pt-2 gray-container d-flex align-items-center">
         <div class="container">
           <div class="row">
             <div class="col-12 col-sm-4 offset-sm-8">
-              <img src="media/text-estagio.png" alt="" class="img-fluid">
+              <img src="media/text-estagio.png" alt="" class="img-fluid w-50 mb-2">
               <p class="os gray-paragraph text-left">Apostamos na energia e nas ideias fresh da nova geração para ser uma das Companhias mais desejadas para se trabalhar, que gera valor por meio do respeito pelas pessoas e pela criação de marcas incríveis. Se você é estudante universitário, não tem medo de novos desafios e está afim de fazer a diferença, inscreva-se para o nosso próximo Programa de Estágio. </p>
             </div>
           </div>
@@ -255,8 +321,8 @@
       <div class="cadeira d-flex align-items-center">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-sm-5">
-              <img src="media/leader.png" alt="" class="">
+            <div class="col-12 col-sm-6 col-lg-5">
+              <img src="media/leader.png" alt="" class="img-fluid w-50">
               <p class="os text-left">Se você tem brilho nos olhos, facilidade para realizar diferentes tarefas e sabe que tem potencial para muito mais, nosso programa de formação de jovens líderes pode ser o próximo passo da sua carreira. Por meio de uma trilha de desenvolvimento estruturada, desafiadora e com metas claras, o programa prepara os novos profissionais para assumirem cargos de liderança na HEINEKEN após 12 meses de imersão no negócio. Fez sentido? <br><br>
                 Clique aqui e entenda mais sobre o programa e processo seletivo. </p>
               </div>
@@ -267,7 +333,7 @@
         <div class="green d-flex align-items-center justify-content-center text-center">
           <div class="container">
             <div class="row">
-              <div class="col-12 col-sm-8 offset-sm-2">
+              <div class="col-12 col-lg-8 offset-lg-2">
                 
                 <h3 class="subl mb-4"><u>Aqui pode estar sua próxima oportunidade</u></h3>
                 
