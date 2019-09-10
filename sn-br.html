@@ -111,6 +111,42 @@
     .latas h1 {
       font-size: 33px;
     }
+    .np-md {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @media (max-width: 768px) {
+      .title {
+        margin-bottom: 30px;
+      }
+      .mapa p {
+        margin-bottom: 30px!important;
+      }
+      .fabrica {
+        display: flex;
+        justify-content: center;
+      }
+      .fabrica img {
+        max-width: 130% !important;
+        width: auto !important;
+      }
+    }
+    @media (max-width: 520px) {
+      .title {
+        margin-bottom: 30px;
+      }
+      .mapa p {
+        margin-bottom: 30px!important;
+      }
+      .fabrica {
+        display: flex;
+        justify-content: center;
+      }
+      .fabrica img {
+        max-width: 220% !important;
+        width: auto !important;
+      }
+    }
   </style>
   <title>Boilerplate</title>
 </head>
@@ -120,18 +156,22 @@
   <!--Begin content-->
   <div class="gray-container pt-5 pb-3 sn-vp">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-6">
-          <img src="media/title-br.png" alt="" class="w-100 img-fluid">
+      <div class="row mb-5">
+        <div class="col-12 col-lg-6">
+          <img src="media/title-br.png" alt="" class="w-100 img-fluid title">
         </div>
-        <div class="col-12 col-sm-6 col-md-5">
+        <div class="col-12 col-lg-5">
           <p class="os gray-paragraph">
             Nossa história se iniciou em 1864, quando Gerard Adriaan Heineken adquiriu uma pequena cervejaria em Amsterdã, no coração da Holanda. Cinco anos depois, em 1869, Gerard decidiu mudar o processo de produção, adotando o método alemão de baixa fermentação e o . O resultado foi uma cerveja de altíssima qualidade, apreciada em todo o mundo há mais de um século. Assim nascia a primeira cerveja Heineken, batizada desta maneira para provar ao mundo a confiança de nosso fundador em seu produto. A pequena cervejaria conquistou respeito e não parou de crescer: ainda na primeira metade do século XX, a  companhia se internacionalizou e expandiu seus negócios a mercados até então improváveis, como a Ásia.
           </p>
         </div>
         
       </div>
-      <img src="media/h-br.png" alt="" class="img-fluid mt-5 pt-3 mb-5">
+      <div class="row">
+        <div class="col-12 col-md-4 np-md"><img src="media/h-img-1.png" alt="" class="img-fluid"></div>
+        <div class="col-12 col-md-4 np-md"><img src="media/h-img-2.png" alt="" class="img-fluid"></div>
+        <div class="col-12 col-md-4 np-md"><img src="media/h-img-3.png" alt="" class="img-fluid"></div>
+      </div>
     </div>
     <div class="mapa mt-5 d-flex align-items-center">
       <div class="container">
